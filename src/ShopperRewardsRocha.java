@@ -33,7 +33,7 @@ public class ShopperRewardsRocha {
 		double groceryCost = in.nextDouble();
 		
 		if (groceryCost > VERY_HIGH_GROCERY_PURCHASE_RANGE) {
-			coupon = (groceryCost * VERY_HIGH_GROCERY_DISCOUNT_RATE) / 100;
+			coupon = (groceryCost * VERY_HIGH_GROCERY_DISCOUNT_RATE) / HUNDRED_DIVIDER;
 			couponRate = VERY_HIGH_GROCERY_DISCOUNT_RATE;
 		}
 		else if (groceryCost > HIGH_GROCERY_PURCHASE_RANGE) {
