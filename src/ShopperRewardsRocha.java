@@ -7,6 +7,7 @@ public class ShopperRewardsRocha {
 		double coupon = 0;
 		int couponRate = 0;
 		int gasCouponDiscount = 0;
+		char cent = '\u00A2';
 		
 		final int HUNDRED_DIVIDER = 100;
 		
@@ -60,7 +61,7 @@ public class ShopperRewardsRocha {
 		
 		System.out.printf("You receive a discount coupon of $%.2f. (%%%d of your purchase)", coupon, couponRate);
 		System.out.println();
-		System.out.printf("You have earned a %d¢ discount per gallon of gas.", gasCouponDiscount);
+		System.out.printf("You have earned a %d" + cent + " discount per gallon of gas.", gasCouponDiscount);
 		
 		in.close();
 	}
